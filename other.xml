@@ -1,0 +1,33 @@
+<application>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v8.4.0/bin/node">
+      <version-cache version="8.4.0" last-modified="1502815164000" />
+    </local-interpreter>
+    <local-interpreter path="/usr/local/Cellar/node/7.7.3/bin/node">
+      <version-cache version="7.7.3" last-modified="1490152464000" />
+    </local-interpreter>
+    <local-interpreter path="/usr/local/bin/node">
+      <version-cache version="7.7.3" last-modified="1490152464000" />
+    </local-interpreter>
+    <local-interpreter path="/usr/local/Cellar/node/7.4.0/bin/node">
+      <version-cache version="7.4.0" last-modified="1483551728000" />
+    </local-interpreter>
+    <local-interpreter path="/usr/local/Cellar/node/6.5.0/bin/node">
+      <version-cache version="6.5.0" last-modified="1472225243000" />
+    </local-interpreter>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="ExpandRunDashboardTypesPanel" value="false" />
+    <property name="HbAutoCollapseBlocks" value="disabled" />
+    <property name="SettingsSearchHistory" value="node" />
+    <property name="WebStorm.dumbRunEnabled" value="true" />
+    <property name="WebStorm.enableDefaultTooltipFixes" value="true" />
+    <property name="WebStorm.enableSmartQuotes" value="true" />
+    <property name="WebStorm.initialConfigurationShown" value="true" />
+    <property name="evlsprt3.183" value="12" />
+    <property name="file.gist.reindex.count" value="6684" />
+    <property name="ts.lib.d.ts.version" value="3.2.1" />
+  </component>
+</application>

@@ -1,0 +1,7 @@
+<application>
+  <component name="GithubAccounts">
+    <account id="5e6ebee9-4d95-46da-9a10-f08836364067" name="nfheredia">
+      <server host="github.com" />
+    </account>
+  </component>
+</application>
