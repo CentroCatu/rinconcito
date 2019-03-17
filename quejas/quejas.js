@@ -18,17 +18,17 @@ function enviar() {
 // empecemos a hackear!
 
 // en la línea 11 se le agrega un texto al final de lo que estaba guardado
-// en la variable textoQueja . Nosotros no le queremos agregar nada, queremos que
+// en la variable textoQueja . Nosotros no le queremos agregar nada, en cambio queremos que
 // reemplace todas las vocales por una 'i'
 
-// que pasa si cambio la linea 11 por esta? prueven a ver que pasa
+// que pasa si cambio la linea 11 por esta? prueven a ver que pasa...
 // var textoModificado = textoQueja.replace(/a|b|c|e/gi, 'z')
-// acuérdense se guardar y refrescar la pagina para probar los cambios
+// acuérdense de guardar y refrescar la pagina para probar los cambios
 
 // hace lo que nosotros queremos? mmm creo que no
 // pero a lo mejor podemos modificarlo para que convieta todas las vocales en i
 
-// replace significa reemplazar en inglés, pero no sabemos muy bien como hay que usarla
+// 'replace' significa reemplazar en inglés, pero no sabemos muy bien como hay que usarla
 // a veces hay que tratar de adivinar
 
 // si leemos esto:
@@ -36,7 +36,8 @@ function enviar() {
 // cual les parece que es la letra que va a reemplazar a las otras?
 // donde se ponen las letras que queremos que sean reemplazadas?
 
-// la idea es probar distintas cosas hasta ver cómo hacer para que funcione como nosotros queremos
+// la idea de este ejercicio es probar distintas cosas hasta ver
+// cómo hacer para que funcione como nosotros queremos
 
 // otra cosa ...
 // parece que cuando apretamos enviar, el título de nuestra página se cambia
