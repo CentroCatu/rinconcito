@@ -14,13 +14,13 @@ pipeline {
       }
     }
 
-    stage ('Deploy Branch to DEV?') {
+    stage ('Deploy Branch?') {
       steps {
         script {
           try {
             timeout(time: 30, unit: 'SECONDS') {
-              env.DEPLOY_TO_DEV = input message: 'Deploy branch to DEV',
-                parameters: [choice(name: 'Do you want to deploy this branch to DEV?', defaultValue: 'no',  choices: 'no\nyes', description: 'Choose "yes" if you want to deploy this build')]
+              env.DEPLOY_TO_DEV = input message: 'Deploy branch',
+                parameters: [choice(name: 'Do you want to deploy this branch?', defaultValue: 'no',  choices: 'no\nyes', description: 'Choose "yes" if you want to deploy this build')]
             }
           } catch(err) {
             echo "using default value"
@@ -29,44 +29,17 @@ pipeline {
       }
     }
 
-    stage ('Deploying in DEV') {
+    stage ('Deploying to Jenkins') {
       when {
         environment name: 'DEPLOY_TO_DEV', value: 'yes'
       }
       steps {
            sh '''
-             cp -rf $WORKSPACE/* /var/www/html/rinconcito/dev
+             cp -rf $WORKSPACE/* /var/www/html/rinconcito
             '''
       }
     }
-
-    stage ('Deploy Branch to QA?') {
-      when {
-        branch 'master'
-      }
-      steps {
-        script {
-          try {
-            timeout(time: 30, unit: 'SECONDS') {
-              env.DEPLOY_TO_QA = input message: 'Deploy branch to QA',
-                parameters: [choice(name: 'Do you want to deploy this branch to QA?', defaultValue: 'no',  choices: 'no\nyes', description: 'Choose "yes" if you want to deploy this build')]
-            }
-          } catch(err) {
-            echo "using default value"
-          }
-        }
-      }
-    }
-    stage ('Deploying in QA') {
-      when {
-        environment name: 'DEPLOY_TO_QA', value: 'yes'
-      }
-      steps {
-           sh '''
-              cp -rf $WORKSPACE/* /var/www/html/rinconcito/qa/
-            '''
-      }
-    }
+    
     stage ('Cleanup') {
       steps {
         deleteDir() /* clean up our workspace */
