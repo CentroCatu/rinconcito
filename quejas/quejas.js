@@ -8,12 +8,13 @@ function enviar() {
     var textoQueja = document.getElementById('input-quejas').value
 
     // de esta manera modificamos el texto y lo guardamos en la variable 'textoModificado'
-    var textoModificado = textoQueja + ' un agregado para probar'
+    var textoModificado = textoQueja.replace(/a|e|o|u/gi,'i')
 
     // de esta manera le ponemos el texto que está guardado en 'textoModificado'
     // al elemento que tiene el id 'quejas-titulo'
-    document.getElementById('quejas-titulo').innerHTML = textoModificado
+    document.getElementById('lugar-burla').innerHTML = textoModificado
 }
+
 
 // empecemos a hackear!
 
