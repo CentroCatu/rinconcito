@@ -1,4 +1,5 @@
 var cantidadDeVideos = 0
 function agregar() {
-    alert('hola amigo')
+    cantidadDeVideos = cantidadDeVideos + 1
+    alert(cantidadDeVideos)
 }
