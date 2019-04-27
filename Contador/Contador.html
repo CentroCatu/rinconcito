@@ -23,8 +23,8 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="../index.html">El Rinconcito</a></li>
-								<li class="current"><a href="quejas.html">Quejas</a></li>
-								<li><a href="../Contador/Contador.html">Contador de Videos</a></li>
+								<li><a href="quejas.html">Quejas</a></li>
+								<li class="current"><a href="../Contador/Contador.html">Contador de Videos</a></li>
 								<li><a href="">Que hay hoy?</a></li></ul>
 						</nav>
 
@@ -36,17 +36,16 @@
 
 						<!-- Content -->
 							<article class="box post">
-								<a href="#" class="image featured"><img src="../images/bebe.jpeg" alt="" /></a>
 								<header>
-									<h2 id='quejas-titulo'>Quejas</h2>
-									<p>Su opinión, para nosotros, es tan vital como el rocío de la mañana que cae.</p>
-								</header>
-								<textarea id="input-quejas" cols="100" rows="10"></textarea>
-								<button onclick="enviar()">Enviar</button>
+									<h2 id='quejas-titulo'>Contador</h2>
+                                </header>
 								<section>
 									<header>
-										<h3>Su queja:</h3>
-										<h3 id='lugar-burla'>Queja de prueva</h3>
+                                        <h3>Cantidad de videos de Dragon Ball Z</h3>
+                                        <button onclick="agregar()">Agregar Uno</button>
+                                        <h2>Cantidad de videos</h2>
+                                        <h3  id='numeroContador'>0 </h3>
+                                        <!-- <button onclick="meArrepenti()  ">Me arrepenti</button> -->
 									</header>
 								</section>
 							</article>
@@ -56,7 +55,7 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="quejas.js"></script>
+			<script src="Contador.js"></script>
 			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/jquery.dropotron.min.js"></script>
 			<script src="../assets/js/browser.min.js"></script>
