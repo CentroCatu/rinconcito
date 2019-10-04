@@ -1,0 +1,37 @@
+<h1> Crear Reserva</h1>
+<br>
+<label for="dni" >DNI</label> <input type="text" name= 'dni' onchange="habilitarDesdeHasta()">
+<br>
+<label for="desde" >desde</label><input type="date" id="desde" name="desde" id="" disabled>
+<br>
+<label for="hasta">hasta</label><input onchange="habilitarHabitaciones()"  id="hasta" type="date" name="hasta" id="" disabled>
+<br>
+<div id="habitaciones" hidden>
+    <div><h1>habitación 1</h1>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                reservar habitación
+            </label>
+        </div>
+    </div>
+    <div><h1>habitación 2</h1>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                reservar habitación
+            </label>
+        </div>
+    </div>
+    <div><h1>habitación 3</h1>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                reservar habitación
+            </label>
+        </div>
+    </div>
+</div>
+<br>
+<button onclick="confirmar()"> confirmar reserva</button>
+<script src="crear_reserva.js"></script>
