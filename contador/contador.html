@@ -12,7 +12,7 @@
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
-  
+
 			<!-- Header -->
 				<section id="header">
 
@@ -23,8 +23,8 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="../index.html">El Rinconcito</a></li>
-								<li class="current"><a href="quejas.html">Quejas</a></li>
-								<li><a href="contador/contador.html">Contador de Videos</a></li>
+								<li><a href="quejas.html">Quejas</a></li>
+								<li class="current"><a href="contador.html">Contador de Videos</a></li>
 								<li><a href="">Que hay hoy?</a></li>							</ul>
 						</nav>
 
@@ -36,17 +36,14 @@
 
 						<!-- Content -->
 							<article class="box post">
-								<a href="#" class="image featured"><img src="../images/bebe.jpeg" alt="" /></a>
 								<header>
-									<h2 id='quejas-titulo'>Quejas</h2>
-									<p>Su opinión, para nosotros, es tan vital como el rocío de la mañana que cae.</p>
+									<h2 id='contador-titulo'>Contador de videos de Dragon Ball vistos en clase</h2>
 								</header>
-								<textarea id="input-quejas" cols="100" rows="10"></textarea>
-								<button onclick="enviar()">Enviar</button>
+								<button onclick="agregar()">Agregar uno</button>
 								<section>
 									<header>
-										<h3>Su queja:</h3>
-										<h3 id='lugar-burla'>Queja de prueva</h3>
+										<h3>Cantidad de videos de Dragon Ball vistos en clase: </h3>
+										<h3 id='contador-videos'></h3>
 									</header>
 								</section>
 							</article>
@@ -56,7 +53,7 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="quejas.js"></script>
+			<script src="contador.js"></script>
 			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/jquery.dropotron.min.js"></script>
 			<script src="../assets/js/browser.min.js"></script>
